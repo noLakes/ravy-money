@@ -167,3 +167,31 @@ input {
   width: 200px;
   margin: 1rem 1rem 0rem 1rem;
 }
+
+@media only screen and (max-width: 904px) {
+  .display-container {
+    max-width: 90vw;
+  }
+
+  .center-container {
+    margin: 0 1rem;
+  }
+
+  .worker1, .worker2, .center-container {
+    flex: 1 0 auto;
+  }
+}
+
+@media only screen and (max-width: 709px) {
+  input {
+    max-width: 125px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .worker1, .worker2, .center-container {
+    max-width: 33%;
+  }
+}
