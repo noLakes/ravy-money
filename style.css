@@ -1,0 +1,169 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*-----------------------------------------------*/
+
+:root {
+  --color1: #606462;
+  --color2: #b5c4e8;
+  --color3: #6899ee;
+  --color4: #00493A;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+}
+
+html {
+  background-color: var(--color2);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.display-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color3);
+  border: 3px solid rgba(0, 0, 0, 0.577);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.577);
+}
+
+.content {
+  display: flex;
+}
+
+.worker1, .worker2 {
+  display: flex;
+  flex-direction: column;
+  align-items: c;
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.worker1 input, .worker2 input {
+  margin: 0 0 1rem 0;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.percent-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+input {
+  background-color: var(--color2);
+  border: 2px solid var(--color2);
+  border-radius: 5px;
+}
+
+.budget {
+  align-self: center;
+  text-align: center;
+}
+
+.split {
+  width: 200px;
+  margin: 1rem 1rem 0rem 1rem;
+}
